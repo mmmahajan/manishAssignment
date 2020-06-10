@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionViewCell" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="Manish_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="129"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWe-fX-mie">
+                        <rect key="frame" x="0.0" y="0.0" width="396" height="128.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_noImage" translatesAutoresizingMaskIntoConstraints="NO" id="jUT-72-udi">
+                                <rect key="frame" x="8" y="8" width="88" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="oEy-0v-YEe"/>
+                                    <constraint firstAttribute="width" constant="88" id="u9e-jq-jqy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mt-P9-7HX">
+                                <rect key="frame" x="111" y="15" width="244" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yU-9Z-75A">
+                                <rect key="frame" x="111" y="38.5" width="277" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="120-g6-4tR">
+                                <rect key="frame" x="363" y="12.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="MGf-YP-fFy"/>
+                                    <constraint firstAttribute="width" constant="25" id="Y95-h0-zqY"/>
+                                </constraints>
+                                <state key="normal" image="ic_delete"/>
+                                <connections>
+                                    <action selector="deleteCell:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Sb4-q3-Amy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.68235294117647061" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jUT-72-udi" secondAttribute="bottom" constant="8" id="1yl-3I-TFU"/>
+                            <constraint firstItem="3yU-9Z-75A" firstAttribute="top" secondItem="8mt-P9-7HX" secondAttribute="bottom" constant="4" id="2kb-bP-e1n"/>
+                            <constraint firstAttribute="trailing" secondItem="3yU-9Z-75A" secondAttribute="trailing" constant="8" id="9zE-8g-91e"/>
+                            <constraint firstItem="120-g6-4tR" firstAttribute="centerY" secondItem="8mt-P9-7HX" secondAttribute="centerY" id="N8p-3N-3fh"/>
+                            <constraint firstItem="3yU-9Z-75A" firstAttribute="leading" secondItem="8mt-P9-7HX" secondAttribute="leading" id="O7l-v9-Cml"/>
+                            <constraint firstItem="120-g6-4tR" firstAttribute="leading" secondItem="8mt-P9-7HX" secondAttribute="trailing" constant="8" id="OBa-Ex-aqn"/>
+                            <constraint firstItem="8mt-P9-7HX" firstAttribute="leading" secondItem="jUT-72-udi" secondAttribute="trailing" constant="15" id="ZKp-nf-xmB"/>
+                            <constraint firstItem="jUT-72-udi" firstAttribute="top" secondItem="pWe-fX-mie" secondAttribute="top" constant="8" id="ePQ-v2-Cga"/>
+                            <constraint firstItem="8mt-P9-7HX" firstAttribute="top" secondItem="pWe-fX-mie" secondAttribute="top" constant="15" id="i24-gb-JLB"/>
+                            <constraint firstAttribute="trailing" secondItem="120-g6-4tR" secondAttribute="trailing" constant="8" id="maI-0R-gyF"/>
+                            <constraint firstItem="jUT-72-udi" firstAttribute="leading" secondItem="pWe-fX-mie" secondAttribute="leading" constant="8" id="wbL-Tg-LvO"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3yU-9Z-75A" secondAttribute="bottom" constant="8" id="y9m-w8-ToM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pWe-fX-mie" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="49r-6L-DJm"/>
+                <constraint firstAttribute="bottom" secondItem="pWe-fX-mie" secondAttribute="bottom" constant="0.5" id="6XP-TL-UHt"/>
+                <constraint firstItem="pWe-fX-mie" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GRk-g8-mVZ"/>
+                <constraint firstAttribute="trailing" secondItem="pWe-fX-mie" secondAttribute="trailing" id="cWv-FJ-VM5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="396" height="129"/>
+            <connections>
+                <outlet property="movieImage" destination="jUT-72-udi" id="PfE-Fg-v92"/>
+                <outlet property="subTitle" destination="3yU-9Z-75A" id="ku4-P8-CH7"/>
+                <outlet property="title" destination="8mt-P9-7HX" id="QUo-hU-5HI"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="27.120535714285712"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_delete" width="24" height="24"/>
+        <image name="ic_noImage" width="259" height="194"/>
+    </resources>
+</document>
